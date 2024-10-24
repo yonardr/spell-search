@@ -3,9 +3,9 @@
     <Title>Заклинание {{ spell.name }}</Title>
   </Head>
   <div class="container mx-auto p-4">
-    <button @click="this.$router.go(-1)" class="bg-blue-500 text-white py-2 px-4 rounded">
+    <NuxtLink to="/" class="bg-blue-500 text-white py-2 px-4 rounded">
       Назад
-    </button>
+    </NuxtLink>
     <h1 class="text-4xl mb-4">{{ spell?.name }}</h1>
     <p><strong>Id:</strong> {{ spell?.id }}</p>
     <p v-if="spell?.incantation"><strong>Incantation:</strong> {{ spell?.incantation }}</p>
